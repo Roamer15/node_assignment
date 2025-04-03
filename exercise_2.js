@@ -24,7 +24,7 @@
 
 import { promises as fs } from 'node:fs'
 
-const configFiles = ['config.defalts.json', 'config.env.json', 'config.local.json']
+const configFiles = ['config.defaults.json', 'config.env.json', 'config.local.json']
 
 async function loadConfig(files, index = 0, configData = {}) {
     if (index >= files.length) {
