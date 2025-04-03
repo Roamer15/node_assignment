@@ -1,0 +1,12 @@
+{
+    "name": "assignment_1",
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "start-one": "node exercise_1.js",
+        "start-two": "node exercise_2.js"
+    },
+    "author": "Ian",
+    "license": "MIT",
+    "description": "First NodeJS assignment"
+}
