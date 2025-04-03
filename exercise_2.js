@@ -10,9 +10,13 @@ function loadConfig(files, index = 0, configData = {}) {
     readFile(files[index], (err, contents) => {
         if (err) {
             console.error(`Error loading ${files[index]}:`, err)
+            console.log(`${files[index]} was unsuccessfully loaded`)
+
         } else {
             Object.assign(configData, JSON.parse(contents))
+            console.log(`${files[index]} was successfully loaded`)
         }
+        
         loadConfig(files, index + 1, configData)
     })
 }
